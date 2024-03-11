@@ -244,13 +244,6 @@ public class DBConnectionController {
             throws IOException, BadRequestException, RecordNotFoundException {
 
         String userId = reqHeader.get("username");
-
-        // DBConnectionRequest reqWithoutFileName = new DBConnectionRequest(vendor, host, Integer.parseInt(port),
-        //         serviceName, username, password, null,
-        //         connectionName, null, keystorePassword, null, truststorePassword);
-
-        // DBConnectionDTO dto = dbConnectionService.updateOracleDBConnection(id,userId,reqWithoutFileName,keystore,truststore);
-            
        
 
         DBConnectionDTO dto = dbConnectionService.updateOracleDBConnection(id, userId,oracleDTO);
